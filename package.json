@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "Check a parameter is empty Object. Array, Date, Class, Function, Regex, Symoble are return false.",
   "main": "dist-cjs/index.js",
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KiKiKi-KiKi/isEmptyObject.git"
@@ -20,5 +17,28 @@
   "bugs": {
     "url": "https://github.com/KiKiKi-KiKi/isEmptyObject/issues"
   },
-  "homepage": "https://github.com/KiKiKi-KiKi/isEmptyObject#readme"
+  "scripts": {
+    "build:cjs": "tsc --project . --module commonjs --outDir ./dist-cjs",
+    "build:esm": "tsc --project . --module esNext --outDir ./dist-esm",
+    "build": "npm run build:cjs && npm run build:esm",
+    "test": "jest",
+    "test:w": "jest --runInBand --watch",
+    "test:coverage": "jest --runInBand --coverage",
+    "lint": "eslint \"src/**/*.{js,ts}\"",
+    "lint:fix": "eslint --fix \"src/**/*.{js,ts}\"",
+    "format": "prettier --write \"src/**/*.{js,ts}\""
+  },
+  "homepage": "https://github.com/KiKiKi-KiKi/isEmptyObject#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-prettier": "*",
+    "jest": "*",
+    "prettier": "*",
+    "ts-jest": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  }
 }
