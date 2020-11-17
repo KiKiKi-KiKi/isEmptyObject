@@ -62,14 +62,23 @@ describe('isEmptyObject', () => {
     expect(isEmptyObject(new Object({ bar: 0 }))).toBe(false);
   });
 
-  test('When param is extened Object , return false', () => {
+  test('When param is extened Object , return true', () => {
     const o: { [key: string]: any } = new Object();
     o.a = 'b';
     const obj = Object.create(o);
 
     expect(obj.a).toBe('b');
     expect(obj.hasOwnProperty('a')).toBe(false);
-    expect(isEmptyObject(obj)).toBe(false);
+    expect(isEmptyObject(obj)).toBe(true);
+  });
+
+  test('When param is extened Object with check own property option', () => {
+    const o: { [key: string]: any } = new Object();
+    o.a = 'b';
+    const obj = Object.create(o);
+
+    expect(isEmptyObject(obj, false)).toBe(true);
+    expect(isEmptyObject(obj, true)).toBe(false);
   });
 
   test('When param is Date, return true', () => {
