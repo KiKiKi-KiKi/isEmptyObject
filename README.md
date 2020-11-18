@@ -5,8 +5,8 @@
 [![Coverage Status](https://coveralls.io/repos/github/KiKiKi-KiKi/isEmptyObject/badge.svg?branch=main)](https://coveralls.io/github/KiKiKi-KiKi/isEmptyObject?branch=main) 
 [![ISC License](http://img.shields.io/badge/license-ISC-green.svg?style=flat)](https://github.com/KiKiKi-KiKi/isEmptyObject/blob/main/package.json)
 
-```typescript
-isEmptyObject = (val?: any, checkOwnProperty?: boolean): boolean
+```
+isEmptyObject(val?: any, checkOwnProperty?: boolean) => boolean
 ```
 Check a parameter is empty Object.  
 Array, Date, Class, Function, Regex, Symoble are return false.  
