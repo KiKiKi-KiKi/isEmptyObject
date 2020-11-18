@@ -1,5 +1,10 @@
 # isEmptyObject
 
+[![NPM version](https://badgen.net/npm/v/is-empty-object-x)](https://www.npmjs.com/package/is-empty-object-x) 
+[![Build Status](https://travis-ci.com/KiKiKi-KiKi/isEmptyObject.svg?branch=main)](https://travis-ci.com/KiKiKi-KiKi/isEmptyObject) 
+[![Coverage Status](https://coveralls.io/repos/github/KiKiKi-KiKi/isEmptyObject/badge.svg?branch=main)](https://coveralls.io/github/KiKiKi-KiKi/isEmptyObject?branch=main) 
+[![ISC License](http://img.shields.io/badge/license-ISC-green.svg?style=flat)](https://github.com/KiKiKi-KiKi/isEmptyObject/blob/main/package.json)
+
 ```typescript
 isEmptyObject = (val?: any, checkOwnProperty?: boolean): boolean
 ```
