@@ -1,5 +1,5 @@
 {
-  "name": "is-empty-object",
+  "name": "is-empty-object-x",
   "version": "0.1.0",
   "description": "Check a parameter is empty Object. Array, Date, Class, Function, Regex, Symoble are return false.",
   "main": "dist-cjs/index.js",

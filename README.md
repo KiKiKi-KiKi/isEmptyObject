@@ -10,13 +10,13 @@ When use `checkOwnProperty` option `true`, it check a object has only own proper
 ## Install
 
 ```sh
-$ npm install is-empty-object
+$ npm install is-empty-object-x
 ```
 
 ### usage
 
 ```js
-import isEmptyObject from 'is-empty-object';
+import isEmptyObject from 'is-empty-object-x';
 
 isEmptyObject({}); // => true;
 ```
