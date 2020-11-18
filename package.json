@@ -1,8 +1,10 @@
 {
   "name": "is-empty-object",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Check a parameter is empty Object. Array, Date, Class, Function, Regex, Symoble are return false.",
   "main": "dist-cjs/index.js",
+  "module": "dist-esm/index.js",
+  "types": "dist-cjs/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KiKiKi-KiKi/isEmptyObject.git"
@@ -26,7 +28,8 @@
     "test:coverage": "jest --runInBand --coverage",
     "lint": "eslint \"src/**/*.{js,ts}\"",
     "lint:fix": "eslint --fix \"src/**/*.{js,ts}\"",
-    "format": "prettier --write \"src/**/*.{js,ts}\""
+    "format": "prettier --write \"src/**/*.{js,ts}\"",
+    "prepublishOnly": "npm run build"
   },
   "homepage": "https://github.com/KiKiKi-KiKi/isEmptyObject#readme",
   "devDependencies": {
