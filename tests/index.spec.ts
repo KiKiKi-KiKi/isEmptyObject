@@ -28,11 +28,14 @@ describe('isEmptyObject', () => {
         return true;
       })
     ).toBe(false);
+    const func = function () { };
+    expect(isEmptyObject(func)).toBe(false);
   });
 
   test('When param is String, return false', () => {
     expect(isEmptyObject('String')).toBe(false);
-    expect(isEmptyObject(new String('String'))).toBe(false);
+    expect(isEmptyObject(new String(''))).toBe(false);
+    expect(isEmptyObject('')).toBe(false);
   });
 
   test('When param is Number, return false', () => {
