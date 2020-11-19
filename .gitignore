@@ -1,6 +1,8 @@
 /node_modules
 /lib
 /coverage
+/dist-cjs
+/dist-esm
 
 .DS_Store
 
